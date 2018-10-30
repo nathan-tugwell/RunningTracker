@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  BeginRunViewController.swift
 //  NikeClone
 //
 //  Created by Nathan Tugwell on 29/10/2018.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class BeginRunViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 
