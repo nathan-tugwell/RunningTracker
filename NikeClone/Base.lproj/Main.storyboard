@@ -33,6 +33,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfz-8c-pAc">
                                 <rect key="frame" x="152" y="490" width="71" height="71"/>
                                 <state key="normal" image="startRunningButton"/>
+                                <connections>
+                                    <segue destination="CLh-3k-C04" kind="show" id="Lys-ES-QLP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWh-21-RY9">
                                 <rect key="frame" x="311" y="397" width="58" height="58"/>
@@ -73,6 +76,145 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5G8-hN-zf0">
+            <objects>
+                <viewController id="CLh-3k-C04" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5cV-BI-qKv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="PK3-dv-ygp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fcs-a4-TsF">
+                                <rect key="frame" x="0.0" y="180" width="375" height="165.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Run" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJc-EJ-QYR">
+                                <rect key="frame" x="145.5" y="28" width="84" height="33"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="e3B-As-pSQ">
+                                <rect key="frame" x="146" y="213" width="83" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Pace" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzP-mq-tFb">
+                                        <rect key="frame" x="6.5" y="0.0" width="70" height="20.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZS-XG-YZi">
+                                        <rect key="frame" x="0.0" y="22.5" width="83" height="55"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/mi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZA-XL-44D">
+                                        <rect key="frame" x="30" y="79.5" width="23" height="20.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-EN-Pw6">
+                                <rect key="frame" x="153.5" y="385.5" width="68.5" height="66.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQP-U1-iMX">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="23.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-Ad-bZp">
+                                        <rect key="frame" x="0.0" y="25.5" width="65" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-7N-cAk">
+                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="41"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhh-ug-CxR">
+                                                <rect key="frame" x="45.5" y="13" width="19.5" height="23.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-p2-RGg">
+                                <rect key="frame" x="125.5" y="97" width="124.5" height="41"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunOutline" translatesAutoresizingMaskIntoConstraints="NO" id="LoG-qB-qHC">
+                                <rect key="frame" x="47.5" y="552" width="232" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="xre-Mb-TV2">
+                                <rect key="frame" x="56" y="561" width="57" height="57"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2Y-jL-IpT">
+                                <rect key="frame" x="254.5" y="552" width="75" height="75"/>
+                                <state key="normal" image="pauseButton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Run" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geL-7b-703">
+                                <rect key="frame" x="148.5" y="578" width="66.5" height="23.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Arh-p2-RGg" firstAttribute="top" secondItem="mJc-EJ-QYR" secondAttribute="bottom" constant="36" id="2uU-Bi-nKA"/>
+                            <constraint firstItem="mJc-EJ-QYR" firstAttribute="centerX" secondItem="5cV-BI-qKv" secondAttribute="centerX" id="5Nz-L1-ddM"/>
+                            <constraint firstItem="b2Y-jL-IpT" firstAttribute="centerY" secondItem="LoG-qB-qHC" secondAttribute="centerY" id="66T-gU-G8B"/>
+                            <constraint firstItem="b2Y-jL-IpT" firstAttribute="leading" secondItem="LoG-qB-qHC" secondAttribute="trailing" constant="-25" id="9gD-CO-qBa"/>
+                            <constraint firstItem="PK3-dv-ygp" firstAttribute="leading" secondItem="JGx-x4-t5T" secondAttribute="leading" id="D0d-Wv-qsY"/>
+                            <constraint firstItem="JGx-x4-t5T" firstAttribute="trailing" secondItem="PK3-dv-ygp" secondAttribute="trailing" id="Hny-35-fL1"/>
+                            <constraint firstItem="JGx-x4-t5T" firstAttribute="bottom" secondItem="LoG-qB-qHC" secondAttribute="bottom" constant="40" id="M65-Zt-Rfs"/>
+                            <constraint firstItem="PK3-dv-ygp" firstAttribute="top" secondItem="5cV-BI-qKv" secondAttribute="top" id="PuI-HY-QRg"/>
+                            <constraint firstItem="LoG-qB-qHC" firstAttribute="top" secondItem="XUW-EN-Pw6" secondAttribute="bottom" constant="100" id="Wi5-Xb-ONq"/>
+                            <constraint firstItem="Fcs-a4-TsF" firstAttribute="leading" secondItem="5cV-BI-qKv" secondAttribute="leading" id="Yw2-D3-YOp"/>
+                            <constraint firstItem="XUW-EN-Pw6" firstAttribute="top" secondItem="Fcs-a4-TsF" secondAttribute="bottom" constant="40" id="Zg5-NA-qDa"/>
+                            <constraint firstItem="LoG-qB-qHC" firstAttribute="leading" secondItem="xre-Mb-TV2" secondAttribute="trailing" constant="-65.5" id="c9F-2i-ji3"/>
+                            <constraint firstItem="xre-Mb-TV2" firstAttribute="centerY" secondItem="LoG-qB-qHC" secondAttribute="centerY" id="ceU-Aq-A1q"/>
+                            <constraint firstItem="Fcs-a4-TsF" firstAttribute="top" secondItem="Arh-p2-RGg" secondAttribute="bottom" constant="42" id="el8-wz-gUN"/>
+                            <constraint firstItem="geL-7b-703" firstAttribute="centerY" secondItem="LoG-qB-qHC" secondAttribute="centerY" id="fQM-vz-fsy"/>
+                            <constraint firstItem="e3B-As-pSQ" firstAttribute="centerY" secondItem="Fcs-a4-TsF" secondAttribute="centerY" id="gvI-AI-8Wt"/>
+                            <constraint firstItem="JGx-x4-t5T" firstAttribute="bottom" secondItem="PK3-dv-ygp" secondAttribute="bottom" id="kb4-Yh-9ol"/>
+                            <constraint firstItem="LoG-qB-qHC" firstAttribute="centerX" secondItem="5cV-BI-qKv" secondAttribute="centerX" constant="-24" id="nh4-p7-pFP"/>
+                            <constraint firstItem="e3B-As-pSQ" firstAttribute="centerX" secondItem="Fcs-a4-TsF" secondAttribute="centerX" id="p6w-s1-1Hz"/>
+                            <constraint firstItem="geL-7b-703" firstAttribute="centerX" secondItem="LoG-qB-qHC" secondAttribute="centerX" constant="18" id="qBe-rp-blB"/>
+                            <constraint firstItem="Fcs-a4-TsF" firstAttribute="trailing" secondItem="JGx-x4-t5T" secondAttribute="trailing" id="tth-HZ-Eam"/>
+                            <constraint firstItem="Arh-p2-RGg" firstAttribute="centerX" secondItem="5cV-BI-qKv" secondAttribute="centerX" id="vh6-9n-L4k"/>
+                            <constraint firstItem="XUW-EN-Pw6" firstAttribute="centerX" secondItem="5cV-BI-qKv" secondAttribute="centerX" id="xjI-zh-z0u"/>
+                            <constraint firstItem="mJc-EJ-QYR" firstAttribute="top" secondItem="JGx-x4-t5T" secondAttribute="top" constant="8" id="yhW-YK-bcW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JGx-x4-t5T"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9O-ev-6ct" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.5999999999999" y="-321.58920539730138"/>
         </scene>
         <!--My Log-->
         <scene sceneID="wg7-f3-ORb">
@@ -216,6 +358,9 @@
     <resources>
         <image name="BG" width="375" height="667"/>
         <image name="centerNavButton" width="58" height="58"/>
+        <image name="endRunButton" width="57" height="57"/>
+        <image name="endRunOutline" width="232" height="75"/>
+        <image name="pauseButton" width="75" height="75"/>
         <image name="startRunningButton" width="71" height="71"/>
         <image name="tabbar-myLogIconGray" width="25" height="25"/>
         <image name="tabbar-runIconGray" width="27" height="28"/>

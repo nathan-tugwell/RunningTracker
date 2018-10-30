@@ -63,8 +63,6 @@
 				5D9C596C21874546008F84B3 /* Controller */,
 				5D9C596B2187453D008F84B3 /* View */,
 				5D9C595721874326008F84B3 /* AppDelegate.swift */,
-				5D9C595921874326008F84B3 /* BeginRunViewController.swift */,
-				5D9C595B21874326008F84B3 /* RunLogViewController.swift */,
 				5D9C595D21874326008F84B3 /* Main.storyboard */,
 				5D9C596021874328008F84B3 /* Assets.xcassets */,
 				5D9C596221874328008F84B3 /* LaunchScreen.storyboard */,
@@ -83,6 +81,8 @@
 		5D9C596C21874546008F84B3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5D9C595921874326008F84B3 /* BeginRunViewController.swift */,
+				5D9C595B21874326008F84B3 /* RunLogViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
