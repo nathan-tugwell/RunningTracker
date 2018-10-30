@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  RunLogViewController.swift
 //  NikeClone
 //
 //  Created by Nathan Tugwell on 29/10/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class RunLogViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
