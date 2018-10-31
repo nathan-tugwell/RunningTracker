@@ -40,6 +40,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWh-21-RY9">
                                 <rect key="frame" x="311" y="397" width="58" height="58"/>
                                 <state key="normal" image="centerNavButton"/>
+                                <connections>
+                                    <action selector="locationCenterButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Xiv-Ks-VHH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Run" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkN-vN-Ga7">
                                 <rect key="frame" x="162.5" y="36" width="50" height="39"/>
@@ -72,15 +75,18 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Run" image="tabbar-runIconGray" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="mapView" destination="FF1-IC-13J" id="weU-Se-Bms"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--On Run View Controller-->
         <scene sceneID="5G8-hN-zf0">
             <objects>
-                <viewController id="CLh-3k-C04" sceneMemberID="viewController">
+                <viewController id="CLh-3k-C04" customClass="OnRunViewController" customModule="NikeClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5cV-BI-qKv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

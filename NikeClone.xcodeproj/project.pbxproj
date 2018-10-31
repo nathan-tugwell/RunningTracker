@@ -13,6 +13,8 @@
 		5D9C595F21874326008F84B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9C595D21874326008F84B3 /* Main.storyboard */; };
 		5D9C596121874328008F84B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9C596021874328008F84B3 /* Assets.xcassets */; };
 		5D9C596421874328008F84B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9C596221874328008F84B3 /* LaunchScreen.storyboard */; };
+		5D9C59722188968D008F84B3 /* OnRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C59712188968D008F84B3 /* OnRunViewController.swift */; };
+		5D9C597421889809008F84B3 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C597321889809008F84B3 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5D9C596021874328008F84B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D9C596321874328008F84B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D9C596521874328008F84B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D9C59712188968D008F84B3 /* OnRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnRunViewController.swift; sourceTree = "<group>"; };
+		5D9C597321889809008F84B3 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				5D9C595921874326008F84B3 /* BeginRunViewController.swift */,
+				5D9C597321889809008F84B3 /* LocationViewController.swift */,
+				5D9C59712188968D008F84B3 /* OnRunViewController.swift */,
 				5D9C595B21874326008F84B3 /* RunLogViewController.swift */,
 			);
 			path = Controller;
@@ -186,7 +192,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9C597421889809008F84B3 /* LocationViewController.swift in Sources */,
 				5D9C595C21874326008F84B3 /* RunLogViewController.swift in Sources */,
+				5D9C59722188968D008F84B3 /* OnRunViewController.swift in Sources */,
 				5D9C595821874326008F84B3 /* AppDelegate.swift in Sources */,
 				5D9C595A21874326008F84B3 /* BeginRunViewController.swift in Sources */,
 			);
