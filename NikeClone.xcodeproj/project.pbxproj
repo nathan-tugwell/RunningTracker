@@ -87,8 +87,8 @@
 			children = (
 				5D9C595921874326008F84B3 /* BeginRunViewController.swift */,
 				5D9C597321889809008F84B3 /* LocationViewController.swift */,
-				5D9C59712188968D008F84B3 /* OnRunViewController.swift */,
 				5D9C595B21874326008F84B3 /* RunLogViewController.swift */,
+				5D9C59712188968D008F84B3 /* OnRunViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
