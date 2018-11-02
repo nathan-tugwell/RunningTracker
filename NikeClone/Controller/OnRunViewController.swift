@@ -94,7 +94,7 @@ extension OnRunViewController: CLLocationManagerDelegate {
             startLocation = locations.first
         } else if let location = locations.last {
             runDistance += lastLocation.distance(from: location)
-            distanceLabel.text = "\(runDistance)"
+            distanceLabel.text = "\(runDistance.metersToMiles(places: 2))"
         }
         lastLocation = locations.last
     }

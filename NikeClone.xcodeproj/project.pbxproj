@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D86E712218C971100A33EAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D86E711218C971100A33EAA /* Extensions.swift */; };
 		5D9C595821874326008F84B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C595721874326008F84B3 /* AppDelegate.swift */; };
 		5D9C595A21874326008F84B3 /* BeginRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C595921874326008F84B3 /* BeginRunViewController.swift */; };
 		5D9C595C21874326008F84B3 /* RunLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C595B21874326008F84B3 /* RunLogViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D86E711218C971100A33EAA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5D9C595421874326008F84B3 /* NikeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9C595721874326008F84B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D9C595921874326008F84B3 /* BeginRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginRunViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		5D9C596E2187455C008F84B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5D86E711218C971100A33EAA /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D9C597421889809008F84B3 /* LocationViewController.swift in Sources */,
+				5D86E712218C971100A33EAA /* Extensions.swift in Sources */,
 				5D9C595C21874326008F84B3 /* RunLogViewController.swift in Sources */,
 				5D9C59722188968D008F84B3 /* OnRunViewController.swift in Sources */,
 				5D9C595821874326008F84B3 /* AppDelegate.swift in Sources */,
