@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 
+
 class OnRunViewController: LocationViewController {
     
     @IBOutlet weak var swipeBGImageView: UIImageView!
@@ -95,6 +96,7 @@ extension OnRunViewController: CLLocationManagerDelegate {
             runDistance += lastLocation.distance(from: location)
             distanceLabel.text = "\(runDistance)"
         }
+        lastLocation = locations.last
     }
     
 }
